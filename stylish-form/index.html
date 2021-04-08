@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Stylish form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <article class="card">
+      <h1 class="title">Say Hello!</h1>
+      <form onSubmit="window.location.href = 'thankyou.html'; return false;">
+        <label>
+          Your Name
+          <input
+            name="name"
+            type="text"
+            placeholder="Enter your name"
+            required
+          />
+        </label>
+
+        <label>
+          Email
+          <input
+            name="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+            minlength="10"
+            maxlength="50"
+          />
+        </label>
+
+        <label>
+          Needed Services
+          <select name="service" required>
+            <option value="choose">Choose Services</option>
+            <option value="hf">A high five</option>
+            <option value="fb">A fist bump</option>
+            <option value="bh">A big hug</option>
+          </select>
+        </label>
+
+        <label>
+          Budget
+          <select name="budget" required>
+            <option value="select">Select Budget</option>
+            <option value="bh">£0 I'm skint</option>
+            <option value="hf">£100-£900</option>
+            <option value="fb">£1000-£1900</option>
+            <option value="bh">£10k I'm baller</option>
+          </select>
+        </label>
+
+        <label>
+          Message
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Your message here..."
+          ></textarea>
+        </label>
+
+        <label>
+          <button type="submit">
+            Submit
+            <!-- <img
+              class="arrow-submit"
+              src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-c-512.png"
+              alt="arrow"
+            /> -->
+          </button>
+        </label>
+      </form>
+    </article>
+  </body>
+</html>
